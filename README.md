@@ -2,14 +2,14 @@
 This is API to get serial values from RPI using pyserial and use flask to output to web
 
 # Build container
-cd flask_app
-docker build -t flask_app .
+cd flask_app<br>
+docker build -t flask_app .<br>
 
 # Run the container
-docker run -p 80:80 -v /home/gerson/scripts/flask_app/app:/app --device /dev/serial0 -it -d <IMAGE_ID> '/app/start.sh'
+docker run -p 80:80 -v /home/gerson/scripts/flask_app/app:/app --device /dev/serial0 -it -d <IMAGE_ID> '/app/start.sh'<br>
 
 # Run logs
-docker logs <CONTAINER_ID>
+docker logs <CONTAINER_ID><br>
  * Serving Flask app "main" (lazy loading)
  * Environment: production
    WARNING: This is a development server. Do not use it in a production deployment.
